@@ -1,103 +1,239 @@
-/* Breyanna King */
+/* CSS BY BREYANNA KING */
 
-/* Imported Fonts */
-@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap);
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 /* CSS REST */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* ROOT Variables*/
-:root{
-    --Teal:#4CA7C0;
-    --Purple: #484FB7;
-    --Lavender: #6b8fe7;
-    --Yellow: #E9BB57;
-    --Pink:#D9526F;
-    --Dark-gray:#1E1E1E;
-   --White:#ffffff;}
-  
-   body{
-    font-family:'Inter', sans-serif;
-    background-color: var(--purple);
-    color: var(--white);
-    max-width: auto;
-    padding:1rem;
-   }
 
-   header{
-    text-align: center;
-    font-size: 2em;
-   }
+/* ROOT VARIABLES */
+:root {
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark-gray: #1E1E1E;
+  --white: #ffffff;
+}
 
-   nav{
-    background-color: var(--yellow);
-    padding:1rem;
-    margin-bottom: 1.5em;
-   }
-   nav h2 {
+/* GLOBAL STYLES (mobile first/small) */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #7096FF; /* matches background in mockup */
+  color: var(--dark-gray);
+  max-width: 450px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: var(--purple);
+  color: var(--white);
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+header h1 {
+  font-family: 'Kavoon', cursive;
+  font-size: 3em;
+}
+
+header p {
+  font-size: 0.9em;
+  margin-top: 0.25rem;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: var(--yellow);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav h2 {
   font-family: 'Kavoon', cursive;
   font-size: 1.5em;
+  font-style: italic;
   color: var(--dark-gray);
+  margin-bottom: 0.5rem;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
 }
 
-nav ul li {
+nav li {
   background-color: var(--white);
+  border: 2px solid var(--purple);
   margin: 0.5rem 0;
   padding: 0.75rem;
-  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
-nav ul li a {
+nav li a {
+  color: var(--purple);
   text-decoration: none;
+  display: block;
+}
+
+/* SECTION HEADERS */
+section h2 {
+  font-family: 'Kavoon', cursive;
+  font-size: 2em;
+  margin: 1.5rem 1rem 0.5rem;
+}
+
+section h3 {
+  font-size: 1.5em;
   font-weight: bold;
+  color: var(--pink);
+  margin: 1rem 1rem 0.5rem;
+}
+
+section h4 {
+  font-size: 1.15em;
+  color: var(--purple);
+  margin-top: 0.5rem;
+}
+
+/* SERVICE CARDS */
+article.service {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article.service img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.service h4 {
   color: var(--purple);
 }
 
-section {
-  margin-bottom: 2rem;
+/* WHY CHOOSE US */
+#why {
+  background-color: var(--pink);
+  padding: 1rem;
+  color: var(--white);
+  text-align: center;
 }
 
-h2 {
-  font-family: 'Kavoon', 
+#why h2 {
+  color: var(--white);
+}
+
+#why .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.feature-box {
+  width: 48%;
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.feature-box.teal { background-color: var(--teal); color: var(--white); }
+.feature-box.lavender { background-color: var(--lavender); color: var(--white); }
+.feature-box.yellow { background-color: var(--yellow); color: var(--dark-gray); }
+.feature-box.white { background-color: var(--white); color: var(--dark-gray); }
+
+/* PRICING SECTION */
+#pricing {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 1rem;
+}
+
+#pricing h2 {
+  font-family: 'Kavoon', cursive;
   font-size: 2em;
+  margin-bottom: 0.5rem;
+}
+
+#pricing h3 {
+  font-size: 1.5em;
+  margin-top: 1rem;
+  color: var(--yellow);
+}
+
+/* PRICING TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+th, td {
+  padding: 0.6rem;
+  border: 1px solid var(--white);
+  text-align: left;
+}
+
+thead {
+  background-color: var(--yellow);
+  color: var(--dark-gray);
+}
+
+/* CTA SECTION */
+#first-step {
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+#first-step h2 {
+  font-family: 'Kavoon', cursive;
+  font-size: 1.5em;
+  margin-bottom: 0.5rem;
+}
+
+#first-step p {
+  font-size: 0.85em;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
-h3 {
-  font-size: 1.5em;
-  color: var(--yellow);
-  margin-top: 1rem;
-}
-
-h4 {
-  font-size: 1.15em;
-  color: var(--teal);
-  margin: 0.5rem 0;
-}
-
-ul {
-  padding-left: 1.25rem;
-}
-
-button {
-  background-color: var(--pink);
-  color: var(--white);
+#first-step button {
+  background-color: var(--white);
+  color: var(--dark-gray);
   padding: 0.75rem 1.5rem;
-  border: none;
   font-weight: bold;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  margin-top: 1rem;
 }
 
+/* FOOTER */
 footer {
+  background-color: var(--purple);
+  color: var(--white);
   text-align: center;
-  font-size: 0.85rem;
-  margin-top: 2rem;}
+  padding: 1rem 0;
+  font-size: 0.75em;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: underline;
+}

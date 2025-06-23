@@ -37,4 +37,67 @@
     padding:1rem;
     margin-bottom: 1.5em;
    }
-   
+   nav h2 {
+  font-family: 'Kavoon', cursive;
+  font-size: 1.5em;
+  color: var(--dark-gray);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  background-color: var(--white);
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: 'Kavoon', cursive;
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: var(--yellow);
+  margin-top: 1rem;
+}
+
+h4 {
+  font-size: 1.15em;
+  color: var(--teal);
+  margin: 0.5rem 0;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+button {
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 2rem;
